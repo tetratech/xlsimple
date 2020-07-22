@@ -4,7 +4,14 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2020-07-22 15:15:25
+    #> Last Update: 2020-07-22 15:41:58
+
+# xlsimple 1.0.2.9002
+
+  - Release 2020-07-22
+  - Prep for CRAN resubmission; Issue \#1
+      - Move package creation helper script to   
+      - Add .findFile example to do not run.
 
 # xlsimple 1.0.2.9001
 

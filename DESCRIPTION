@@ -8,9 +8,9 @@ Description: Provides a simple wrapper for some 'XLConnect' functions. 'XLConnec
     first row to remind user what is in the data set. Auto filters and freeze
     rows are turned on. A brief readme file is created that provides a summary
     listing of the created sheets and, where provided, the description.
-Author: Jon Harcum, Erik Leppo
+Author: Jon Harcum, Erik W. Leppo
 Maintainer: Jon Harcum <jon.harcum@tetratech.com>
-Version: 1.0.2.9001
+Version: 1.0.2.9002
 Date: 2020-07-20 
 Depends:
     R (>= 3.2.0)

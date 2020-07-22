@@ -8,6 +8,7 @@
 #' @param n number of files to return (e.g., value of 1 returns most recent
 #'   file, value of 'all' returns all files)
 #' @param fileNameOnly logical field, if TRUE only return file name
+#'
 #' @details This function is used to search a selected directory for information
 #'   about the most recently modified files in that directory. The default
 #'   setting searches the current working directory. Relative directory
@@ -23,7 +24,9 @@
 #'   date/time and create date/time.
 #'
 #'   The results are in descending order of modified date/time.
+#'
 #' @examples
+#'\dontrun{
 #' # name of most recently modified file
 #' .findFile()         # current directory
 #' .findFile("..")     # one directory up
@@ -32,10 +35,12 @@
 #' # list of files and common attributes one directory up
 #' .findFile(folder="..", file="*.*", n=2, fileNameOnly=FALSE)      #two most recent files
 #' .findFile(folder="..", file="*.*", n="all", fileNameOnly=FALSE)  #all files
+#' }
+#'
 #' @return returns file name as a character string
+#'
 #' @export
 .findFile <- function(folder='.', file='*.*', n=1, fileNameOnly=TRUE) {
-
 # ----- Change history --------------------------------------------
 # 12Jul2016: JBH: added comments
 # 26Jun2016: JBH: code updated to remove dplyr dependency
