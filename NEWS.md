@@ -4,9 +4,15 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2020-07-22 14:45:27
+    #> Last Update: 2020-07-22 15:15:25
 
-# xlsimple 2.0.2
+# xlsimple 1.0.2.9001
+
+  - Release 2020-07-22
+  - Update text around URL for loadxls::read\_all(); Issue \#1
+      - The URL no longer exists.
+
+# xlsimple 1.0.2
 
   - Release 2020-07-20
   - cran refresh.

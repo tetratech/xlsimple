@@ -27,7 +27,9 @@ Given a MS Excel File it loads the full workbook creating as many variables as
 sheets exists in the workbook.
 }
 \details{
-This function was developed by Carles Hernandez-Ferrer
+This function was developed by Carles Hernandez-Ferrer in the
+package "loadxls" hosted on GitHub (carleshf/loadxls).  As of 2020-07-20
+the repo no longer exists.  The blog post about the package is below.
 
-https://github.com/carleshf/loadxls/blob/master/R/read_all.R
+https://carleshf87.wordpress.com/2016/01/24/loadxls-r-package/
 }
