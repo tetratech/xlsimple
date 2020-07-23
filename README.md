@@ -3,7 +3,7 @@
 
 # xlsimple
 
-    #> Last Update: 2020-07-19 15:14:20
+    #> Last Update: 2020-07-23 08:27:39
 
 Provides a simple wrapper for some XLConnect functions. Individual
 sheets can include a description on the first row to remind user what is
@@ -12,7 +12,9 @@ readme file is created that provides a summary listing of the created
 sheets and where provided the description.
 
 Included one function, read\_all(), from the package “loadxls” by Carles
-Hernandez-Ferrer. <https://github.com/carleshf/loadxls>
+Hernandez-Ferrer (carleshf). This was in a GitHub repository, but it
+does not exist as of 2020-07-20. The original blog post is below.
+<https://carleshf87.wordpress.com/2016/01/24/loadxls-r-package/>
 
 ## Purpose
 
@@ -28,9 +30,7 @@ You can install the released version of baytrends from
 install.packages("xlsimple")
 ```
 
-And the development version from [GitHub](https://github.com/) with:
+And the development version from [GitHub](https://github.com) with:
 
-``` r
-# install.packages("devtools")
-devtools::install_github("tetratech/xlsimple")
-```
+    # install.packages("devtools")
+    devtools::install_github("tetratech/xlsimple")
