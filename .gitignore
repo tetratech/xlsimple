@@ -6,3 +6,4 @@ NEWS.rmd
 README.Rmd
 _LibraryCreation.Rmd
 _LibraryCreation.nb.html
+^.*\.Rproj$

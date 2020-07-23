@@ -4,7 +4,15 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2020-07-22 15:41:58
+    #> Last Update: 2020-07-23 08:03:07
+
+# xlsimple 1.0.2.9003
+
+  - Release 2020-07-23
+  - Prep for CRAN resubmission; Issue \#1
+      - Add files to gitignore and buildignore.
+      - Move XLConnect from Suggests to Imports.
+      - Change maintainer.
 
 # xlsimple 1.0.2.9002
 
