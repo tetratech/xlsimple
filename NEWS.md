@@ -4,7 +4,13 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2020-07-23 08:03:07
+    #> Last Update: 2020-07-23 08:05:02
+
+# xlsimple 1.0.3
+
+  - Release 2020-07-23
+  - Prep for CRAN resubmission; Issue \#1
+      - Update version number.
 
 # xlsimple 1.0.2.9003
 
