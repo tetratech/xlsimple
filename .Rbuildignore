@@ -4,3 +4,4 @@
 ^README\.Rmd$
 _LibraryCreation.Rmd
 _LibraryCreation.nb.html
+^cran-comments\.md$

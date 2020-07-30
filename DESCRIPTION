@@ -10,8 +10,8 @@ Description: Provides a simple wrapper for some 'XLConnect' functions. 'XLConnec
     listing of the created sheets and, where provided, the description.
 Authors@R: c(person("Jon", "Harcum", role="aut"), 
 	person("Erik W.", "Leppo", email="Erik.Leppo@tetratech.com",role=c("aut","cre")))
-Maintainer: Erik Leppo <Erik.Leppo@tetratech.com>
-Version: 1.0.4.9001
+Maintainer: Erik W. Leppo <Erik.Leppo@tetratech.com>
+Version: 1.0.4.9002
 Date: 2020-07-30
 Depends:
     R (>= 3.2.0)
