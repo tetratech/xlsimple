@@ -26,16 +26,14 @@
 #'   The results are in descending order of modified date/time.
 #'
 #' @examples
-#'\dontrun{
 #' # name of most recently modified file
-#' .findFile()         # current directory
-#' .findFile("..")     # one directory up
-#' .findFile("c:/")    # c root directory
-#' #
-#' # list of files and common attributes one directory up
-#' .findFile(folder="..", file="*.*", n=2, fileNameOnly=FALSE)      #two most recent files
-#' .findFile(folder="..", file="*.*", n="all", fileNameOnly=FALSE)  #all files
-#' }
+#' .findFile()          # current directory
+#' .findFile("..")      # one directory up
+#' .findFile(tempdir()) # temp directory
+#'
+#' # list of files and common attributes in temp directory
+#' .findFile(folder=tempdir(), file="*.*", n=2, fileNameOnly=FALSE)      #two most recent files
+#' .findFile(folder=tempdir(), file="*.*", n="all", fileNameOnly=FALSE)  #all files
 #'
 #' @return returns file name as a character string
 #'

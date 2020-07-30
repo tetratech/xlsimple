@@ -4,7 +4,21 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2020-07-23 08:32:19
+    #> Last Update: 2020-07-30 12:41:33
+
+# xlsimple 1.0.4.9001
+
+  - Release 2020-07-30
+  - Updates for CRAN; Issue \#1
+      - DESCRIPTION
+          - Authors, reformat
+      - Write examples to tempdir() rather than marking as 
+          - addXLSheetStd
+          - findFile
+          - getXLSettings
+          - saveXLworkbook
+      - Add single quotes to Excel references in titles, descriptions,
+        and details.
 
 # xlsimple 1.0.4
 

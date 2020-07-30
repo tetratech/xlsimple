@@ -1,14 +1,15 @@
-#' Load a full MS Excel File
+#' Load a full 'MS Excel' File
 #'
-#' Given a MS Excel File it loads the full workbook creating as many variables as
+#' Given a 'MS Excel' File it loads the full workbook creating as many variables as
 #' sheets exists in the workbook.
 #'
-#' @param filename The path and the name to the MS Excel File.
+#' @param filename The path and the name to the' MS Excel' File.
 #' @param environment Environment were the new variables will be located. By
 #' default is parent environment.
 #' @param verbose If set to \code{TRUE} useful messages are shown.
 #' @param free.warnings If set to \code{TRUE} it shows any warnings
 #' result of loading the content of the book's sheets.
+#'
 #' @details This function was developed by Carles Hernandez-Ferrer (carleshf) in
 #' the package "loadxls" hosted on GitHub.  As of 2020-07-20 the repo no longer
 #' exists.  The blog post about the package is below.

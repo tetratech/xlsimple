@@ -2,7 +2,7 @@
 % Please edit documentation in R/addXLreadme.R
 \name{.addXLreadme}
 \alias{.addXLreadme}
-\title{Add a readme sheet to the Excel workbook}
+\title{Add a readme sheet to the 'Excel' workbook}
 \usage{
 .addXLreadme(wbList = XL.wb)
 }
@@ -13,5 +13,5 @@
 list with workbook and default cell styles
 }
 \description{
-Add a readme sheet to the Excel workbook
+Add a readme sheet to the 'Excel' workbook
 }

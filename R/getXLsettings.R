@@ -1,29 +1,28 @@
-###########################################################
-#' Get Default Excel cell styles
+#' Get Default 'Excel' cell styles
 #'
-#' Get Default Excel cell styles
+#' Get Default 'Excel' cell styles
 #'
-#' @param fname Excel file name
-#' @details If no Excel file is specified then the built in cell styles are used.
-#'   User-supplied Excel file would need to have the following cell styles
+#' @param fname 'Excel' file name
+#'
+#' @details If no 'Excel' file is specified then the built in cell styles are used.
+#'   User-supplied 'Excel' file would need to have the following cell styles
 #'   specified: xl.descrip, xl.normal, xl.header, xl.header.wrap, xl.hyperlink.
 #'
 #' @examples
-#'\dontrun{
 #' XL.wb <- getXLsettings()
 #' XL.wb <- addXLsheetStd(XL.wb, mtcars)
 #' XL.wb <- addXLsheetStd(XL.wb, mtcars, "mtcars1")
 #' XL.wb <- addXLsheetStd(XL.wb, mtcars, "mtcars2", "Standard mtcars data frame")
 #' XL.wb$pName <- "ProjName" # optional, blank if not included
 #' XL.wb$pDesc <- "ProjDesc" # optional, blank if not included
-#' saveXLworkbook(XL.wb, 'myXLfile.xlsx', timeStamp=FALSE, clean=FALSE)
-#' saveXLworkbook(XL.wb, 'myXLfile.xlsx', timeStamp=TRUE,  clean=FALSE)
-#' saveXLworkbook(XL.wb, 'myXLfile.xlsx', timeStamp=TRUE,  clean=TRUE)
-#' saveXLworkbook(XL.wb, 'myXLfile.xlsx')
-#' }
+#' saveXLworkbook(XL.wb, file.path(tempdir(), 'myXLfile.xlsx'), timeStamp=FALSE, clean=FALSE)
+#' saveXLworkbook(XL.wb, file.path(tempdir(), 'myXLfile.xlsx'), timeStamp=TRUE,  clean=FALSE)
+#' saveXLworkbook(XL.wb, file.path(tempdir(), 'myXLfile.xlsx'), timeStamp=TRUE,  clean=TRUE)
+#' saveXLworkbook(XL.wb, file.path(tempdir(), 'myXLfile.xlsx'))
+#'
 #' @return list with workbook and default cell styles
+#'
 #' @export
-#
 getXLsettings <-function(fname=NA) {
 
   # Pick up file name

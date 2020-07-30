@@ -1,12 +1,12 @@
-###########################################################
-#' Add a sheet to the Excel workbook
+#' Add a sheet to the 'Excel' workbook
 #'
-#' Add a sheet to the Excel workbook
+#' Add a sheet to the 'Excel' workbook
 #'
 #' @param wbList list with workbook and default cell styles (i.e., output from getXLsettings)
 #' @param df data frame to output to sheet
 #' @param sheetName sheet name
 #' @param descrip description of sheet
+#'
 #' @details The \code{sheetName} is the name that will be used for the sheet. When
 #' \code{sheetName} is not specified, the name of the \code{df} will be used. The
 #' \code{descrip} is a character string that will be placed into cell A1 of the sheet
@@ -14,22 +14,22 @@
 #' will begin at cell A3. If \code{descrip} is not specified, then the dataframe will
 #' begin at cell A1. The outputted table will have filters turned on and table headers
 #' and first column frozen.
+#'
 #' @examples
-#'\dontrun{
 #' XL.wb <- getXLsettings()
 #' XL.wb <- addXLsheetStd(XL.wb, mtcars)
 #' XL.wb <- addXLsheetStd(XL.wb, mtcars, "mtcars1")
 #' XL.wb <- addXLsheetStd(XL.wb, mtcars, "mtcars2", "Standard mtcars data frame")
 #' XL.wb$pName <- "ProjName" # optional, blank if not included
 #' XL.wb$pDesc <- "ProjDesc" # optional, blank if not included
-#' saveXLworkbook(XL.wb, 'myXLfile.xlsx', timeStamp=FALSE, clean=FALSE)
-#' saveXLworkbook(XL.wb, 'myXLfile.xlsx', timeStamp=TRUE,  clean=FALSE)
-#' saveXLworkbook(XL.wb, 'myXLfile.xlsx', timeStamp=TRUE,  clean=TRUE)
-#' saveXLworkbook(XL.wb, 'myXLfile.xlsx')
-#' }
+#' saveXLworkbook(XL.wb, file.path(tempdir(), 'myXLfile.xlsx'), timeStamp=FALSE, clean=FALSE)
+#' saveXLworkbook(XL.wb, file.path(tempdir(), 'myXLfile.xlsx'), timeStamp=TRUE,  clean=FALSE)
+#' saveXLworkbook(XL.wb, file.path(tempdir(), 'myXLfile.xlsx'), timeStamp=TRUE,  clean=TRUE)
+#' saveXLworkbook(XL.wb, file.path(tempdir(), 'myXLfile.xlsx'))
+#'
 #' @return list with workbook and default cell styles
+#'
 #' @export
-#
 addXLsheetStd <- function(wbList=XL.wb, df=NA, sheetName=NA, descrip=NA) {
 # wbList=XL.wb; df=mtcars; sheetName=NA; descrip="mtcars data"
 

@@ -2,7 +2,7 @@
 % Please edit documentation in R/readXLworkbook.R
 \name{readXLworkbook}
 \alias{readXLworkbook}
-\title{Load a full MS Excel File}
+\title{Load a full 'MS Excel' File}
 \usage{
 readXLworkbook(
   filename,
@@ -12,7 +12,7 @@ readXLworkbook(
 )
 }
 \arguments{
-\item{filename}{The path and the name to the MS Excel File.}
+\item{filename}{The path and the name to the' MS Excel' File.}
 
 \item{environment}{Environment were the new variables will be located. By
 default is parent environment.}
@@ -23,7 +23,7 @@ default is parent environment.}
 result of loading the content of the book's sheets.}
 }
 \description{
-Given a MS Excel File it loads the full workbook creating as many variables as
+Given a 'MS Excel' File it loads the full workbook creating as many variables as
 sheets exists in the workbook.
 }
 \details{

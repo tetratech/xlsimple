@@ -2,14 +2,14 @@
 % Please edit documentation in R/saveXLworkbook.R
 \name{saveXLworkbook}
 \alias{saveXLworkbook}
-\title{Save Excel Workbook to disk}
+\title{Save 'Excel' Workbook to disk}
 \usage{
 saveXLworkbook(wbList, fname = "xl.Out.xlsx", timeStamp = FALSE, clean = TRUE)
 }
 \arguments{
 \item{wbList}{list with workbook and default cell styles (i.e., output from getXLsettings)}
 
-\item{fname}{Excel file name}
+\item{fname}{'Excel' file name}
 
 \item{timeStamp}{Logical field to include date/time stamp in file name (TRUE [default]).}
 
@@ -19,19 +19,17 @@ saveXLworkbook(wbList, fname = "xl.Out.xlsx", timeStamp = FALSE, clean = TRUE)
 n/a
 }
 \description{
-Save Excel Workbook to disk
+Save 'Excel' Workbook to disk
 }
 \examples{
-\dontrun{
 XL.wb <- getXLsettings()
 XL.wb <- addXLsheetStd(XL.wb, mtcars)
 XL.wb <- addXLsheetStd(XL.wb, mtcars, "mtcars1")
 XL.wb <- addXLsheetStd(XL.wb, mtcars, "mtcars2", "Standard mtcars data frame")
 XL.wb$pName <- "ProjName" # optional, blank if not included
 XL.wb$pDesc <- "ProjDesc" # optional, blank if not included
-saveXLworkbook(XL.wb, 'myXLfile.xlsx', timeStamp=FALSE, clean=FALSE)
-saveXLworkbook(XL.wb, 'myXLfile.xlsx', timeStamp=TRUE,  clean=FALSE)
-saveXLworkbook(XL.wb, 'myXLfile.xlsx', timeStamp=TRUE,  clean=TRUE)
-saveXLworkbook(XL.wb, 'myXLfile.xlsx')
-}
+saveXLworkbook(XL.wb, file.path(tempdir(), 'myXLfile.xlsx'), timeStamp=FALSE, clean=FALSE)
+saveXLworkbook(XL.wb, file.path(tempdir(), 'myXLfile.xlsx'), timeStamp=TRUE,  clean=FALSE)
+saveXLworkbook(XL.wb, file.path(tempdir(), 'myXLfile.xlsx'), timeStamp=TRUE,  clean=TRUE)
+saveXLworkbook(XL.wb, file.path(tempdir(), 'myXLfile.xlsx'))
 }

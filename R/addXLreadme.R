@@ -1,12 +1,12 @@
-###########################################################
-#' Add a readme sheet to the Excel workbook
+#' Add a readme sheet to the 'Excel' workbook
 #'
-#' Add a readme sheet to the Excel workbook
+#' Add a readme sheet to the 'Excel' workbook
 #'
 #' @param wbList list with workbook and default cell styles (i.e., output from getXLsettings)
+#'
 #' @return list with workbook and default cell styles
+#'
 #' @export
-#
 .addXLreadme <- function(wbList=XL.wb) {
 # df<-mtcars; sheetName=NA; descrip = "My table descrip"
 

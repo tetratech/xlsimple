@@ -8,5 +8,5 @@
 }
 
 .onAttach <-  function(libname = find.package("xlsimple"), pkgname = "xlsimple"){
-  packageStartupMessage("Notice: This package is a simple wrapper for selected XLConnect functions and is provided 'AS IS.'")
+  packageStartupMessage("Notice: This package is a simple wrapper for selected 'XLConnect' functions and is provided 'AS IS.'")
 }

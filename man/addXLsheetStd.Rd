@@ -2,7 +2,7 @@
 % Please edit documentation in R/addXLSheetStd.R
 \name{addXLsheetStd}
 \alias{addXLsheetStd}
-\title{Add a sheet to the Excel workbook}
+\title{Add a sheet to the 'Excel' workbook}
 \usage{
 addXLsheetStd(wbList = XL.wb, df = NA, sheetName = NA, descrip = NA)
 }
@@ -19,7 +19,7 @@ addXLsheetStd(wbList = XL.wb, df = NA, sheetName = NA, descrip = NA)
 list with workbook and default cell styles
 }
 \description{
-Add a sheet to the Excel workbook
+Add a sheet to the 'Excel' workbook
 }
 \details{
 The \code{sheetName} is the name that will be used for the sheet. When
@@ -31,16 +31,15 @@ begin at cell A1. The outputted table will have filters turned on and table head
 and first column frozen.
 }
 \examples{
-\dontrun{
 XL.wb <- getXLsettings()
 XL.wb <- addXLsheetStd(XL.wb, mtcars)
 XL.wb <- addXLsheetStd(XL.wb, mtcars, "mtcars1")
 XL.wb <- addXLsheetStd(XL.wb, mtcars, "mtcars2", "Standard mtcars data frame")
 XL.wb$pName <- "ProjName" # optional, blank if not included
 XL.wb$pDesc <- "ProjDesc" # optional, blank if not included
-saveXLworkbook(XL.wb, 'myXLfile.xlsx', timeStamp=FALSE, clean=FALSE)
-saveXLworkbook(XL.wb, 'myXLfile.xlsx', timeStamp=TRUE,  clean=FALSE)
-saveXLworkbook(XL.wb, 'myXLfile.xlsx', timeStamp=TRUE,  clean=TRUE)
-saveXLworkbook(XL.wb, 'myXLfile.xlsx')
-}
+saveXLworkbook(XL.wb, file.path(tempdir(), 'myXLfile.xlsx'), timeStamp=FALSE, clean=FALSE)
+saveXLworkbook(XL.wb, file.path(tempdir(), 'myXLfile.xlsx'), timeStamp=TRUE,  clean=FALSE)
+saveXLworkbook(XL.wb, file.path(tempdir(), 'myXLfile.xlsx'), timeStamp=TRUE,  clean=TRUE)
+saveXLworkbook(XL.wb, file.path(tempdir(), 'myXLfile.xlsx'))
+
 }

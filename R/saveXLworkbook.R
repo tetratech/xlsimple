@@ -1,25 +1,26 @@
-#' Save Excel Workbook to disk
+#' Save 'Excel' Workbook to disk
 #'
-#' Save Excel Workbook to disk
+#' Save 'Excel' Workbook to disk
 #'
 #' @param wbList list with workbook and default cell styles (i.e., output from getXLsettings)
-#' @param fname Excel file name
+#' @param fname 'Excel' file name
 #' @param timeStamp Logical field to include date/time stamp in file name (TRUE [default]).
 #' @param clean Logical field indicating whether to remove original sheets in workbook
+#'
 #' @examples
-#'\dontrun{
 #' XL.wb <- getXLsettings()
 #' XL.wb <- addXLsheetStd(XL.wb, mtcars)
 #' XL.wb <- addXLsheetStd(XL.wb, mtcars, "mtcars1")
 #' XL.wb <- addXLsheetStd(XL.wb, mtcars, "mtcars2", "Standard mtcars data frame")
 #' XL.wb$pName <- "ProjName" # optional, blank if not included
 #' XL.wb$pDesc <- "ProjDesc" # optional, blank if not included
-#' saveXLworkbook(XL.wb, 'myXLfile.xlsx', timeStamp=FALSE, clean=FALSE)
-#' saveXLworkbook(XL.wb, 'myXLfile.xlsx', timeStamp=TRUE,  clean=FALSE)
-#' saveXLworkbook(XL.wb, 'myXLfile.xlsx', timeStamp=TRUE,  clean=TRUE)
-#' saveXLworkbook(XL.wb, 'myXLfile.xlsx')
-#' }
+#' saveXLworkbook(XL.wb, file.path(tempdir(), 'myXLfile.xlsx'), timeStamp=FALSE, clean=FALSE)
+#' saveXLworkbook(XL.wb, file.path(tempdir(), 'myXLfile.xlsx'), timeStamp=TRUE,  clean=FALSE)
+#' saveXLworkbook(XL.wb, file.path(tempdir(), 'myXLfile.xlsx'), timeStamp=TRUE,  clean=TRUE)
+#' saveXLworkbook(XL.wb, file.path(tempdir(), 'myXLfile.xlsx'))
+#
 #' @return n/a
+#'
 #' @export
 saveXLworkbook <- function(wbList, fname="xl.Out.xlsx", timeStamp=FALSE, clean=TRUE) {
 
