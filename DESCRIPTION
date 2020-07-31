@@ -11,7 +11,7 @@ Description: Provides a simple wrapper for some 'XLConnect' functions. 'XLConnec
 Authors@R: c(person("Jon", "Harcum", role="aut"), 
 	person("Erik W.", "Leppo", email="Erik.Leppo@tetratech.com",role=c("aut","cre")))
 Maintainer: Erik W. Leppo <Erik.Leppo@tetratech.com>
-Version: 1.0.4.9003
+Version: 1.0.5
 Date: 2020-07-30
 Depends:
     R (>= 3.2.0)
