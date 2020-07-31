@@ -4,7 +4,16 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2020-07-30 13:09:53
+    #> Last Update: 2020-07-31 10:22:07
+
+# xlsimple 1.0.4.9003
+
+  - Release 2020-07-31
+  - For consistency update ReadMe with single quotes for names.
+  - Updates for CRAN; Issue \#1
+      - Redo check in RStudio, win-builder, and rHub before re-submit to
+        CRAN.
+      - DESCRIPTION, add SystemRequirements from XLConnect for Java.
 
 # xlsimple 1.0.4.9002
 
