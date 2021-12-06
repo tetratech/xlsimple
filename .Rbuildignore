@@ -5,3 +5,5 @@
 _LibraryCreation.Rmd
 _LibraryCreation.nb.html
 ^cran-comments\.md$
+^\.github
+^\.git
