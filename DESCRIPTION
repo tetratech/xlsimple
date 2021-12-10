@@ -4,16 +4,16 @@ Title: 'XLConnect' Wrapper
 Description: Provides a simple wrapper for some 'XLConnect' functions. 
     'XLConnect' is a package that allows for reading, writing, and manipulating 
     'Microsoft Excel' files. This package, 'xlsimple', adds some documentation 
-    and pre-defined formatting to the outputted 'Excel' file. Individual sheets 
+    and predefined formatting to the outputted 'Excel' file. Individual sheets 
     can include a description on the first row to remind user what is in the 
-    data set. Auto filters and freeze rows are turned on. A brief readme file is
-    created that provides a summary listing of the created sheets and, where 
+    data set. Auto filters and freeze rows are turned on. A brief read me file 
+    is created that provides a summary listing of the created sheets and, where 
     provided, the description.
 Authors@R: c(person("Jon", "Harcum", role = "aut"), 
 	person("Erik W.", "Leppo", email = "Erik.Leppo@tetratech.com"
 	, role=c("aut", "cre")))
 Maintainer: Erik W. Leppo <Erik.Leppo@tetratech.com>
-Version: 1.0.6
+Version: 1.0.7
 Depends:
     R (>= 3.2.0)
 Imports:
