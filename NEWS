@@ -4,13 +4,18 @@ NEWS
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2021-12-06 12:41:40
+    #> Last Update: 2021-12-06 14:46:02
+
+# xlsimple 1.0.6
+
+-   Release 2021-12-06
+-   New version for submittal to CRAN, Issue \#4.
 
 # xlsimple 1.0.5.9001
 
 -   Release 2021-12-06
 -   Update DESCRIPTION by dropping XLConnect’s Java requirement.
-    -   Java not used specifically in the package.
+    -   Java not used specifically in the package, Issue \#4.
     -   Trimmed lines to 80 characters.
     -   Add URL and BugReports.
     -   Removed Date.
